@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/teal_700"
+            app:boxStrokeColor="@color/teal_700">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_cep"
@@ -26,7 +28,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/cep_hint"
                 android:inputType="number"
-                android:maxLength="8" />
+                android:maxLength="8"
+                android:textCursorDrawable="@drawable/cursor_edittext" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
