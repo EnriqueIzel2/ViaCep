@@ -3,4 +3,5 @@
     <!-- main screen   -->
     <string name="cep_hint">CEP</string>
     <string name="button_text">Buscar CEP</string>
+    <string name="logradouro_hint">Logradouro</string>
 </resources>
