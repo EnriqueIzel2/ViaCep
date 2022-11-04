@@ -4,4 +4,7 @@
     <string name="cep_hint">CEP</string>
     <string name="button_text">Buscar CEP</string>
     <string name="logradouro_hint">Logradouro</string>
+    <string name="bairro_hint">Bairro</string>
+    <string name="cidade_hint">Cidade</string>
+    <string name="estado_hint">Estado</string>
 </resources>
