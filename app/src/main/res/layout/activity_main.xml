@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:textColorHint="@color/teal_700"
         app:boxStrokeColor="@color/teal_700">
@@ -65,5 +65,4 @@
             android:maxLines="1"
             android:textCursorDrawable="@drawable/cursor_edittext" />
     </com.google.android.material.textfield.TextInputLayout>
-
 </LinearLayout>
