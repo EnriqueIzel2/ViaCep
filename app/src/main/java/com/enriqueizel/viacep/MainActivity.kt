@@ -1,6 +1,7 @@
 package com.enriqueizel.viacep
 
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -10,5 +11,7 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
 
     window.statusBarColor = Color.parseColor("#FF018786")
+    val actionBar = supportActionBar
+    actionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FF018786")))
   }
 }
