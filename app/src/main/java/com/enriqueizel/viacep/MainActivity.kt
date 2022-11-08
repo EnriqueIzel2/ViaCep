@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 //    configura retrofit
     val retrofit = Retrofit.Builder()
       .addConverterFactory(GsonConverterFactory.create())
-      .baseUrl("viacep.com.br/ws/")
+      .baseUrl("https://viacep.com.br/ws/")
       .build()
       .create(Api::class.java)
 
