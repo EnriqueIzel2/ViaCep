@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() {
               val uf = response.body()?.uf.toString()
 
               setFormularios(logradouro, bairro, localidade, uf)
+            } else {
+              Toast.makeText(applicationContext, "CEP inválido", Toast.LENGTH_SHORT).show()
             }
           }
 
