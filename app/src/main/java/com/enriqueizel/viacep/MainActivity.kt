@@ -42,10 +42,12 @@ class MainActivity : AppCompatActivity() {
         retrofit.getEndereco(cep).enqueue(object : Callback<Endereco> {
           override fun onResponse(call: Call<Endereco>, response: Response<Endereco>) {
             if (response.code() == 200) {
-              val logradouro = response.body()?.logradouro
-              val bairro = response.body()?.bairro
-              val localidade = response.body()?.localidade
-              val uf = response.body()?.uf
+              val logradouro = response.body()?.logradouro.toString()
+              val bairro = response.body()?.bairro.toString()
+              val localidade = response.body()?.localidade.toString()
+              val uf = response.body()?.uf.toString()
+
+              setFormularios(logradouro, bairro, localidade, uf)
             }
           }
 
@@ -55,5 +57,12 @@ class MainActivity : AppCompatActivity() {
         })
       }
     }
+  }
+
+  private fun setFormularios(logradouro: String, bairro: String, localidade: String, uf: String) {
+    binding.editLogradouro.setText(logradouro)
+    binding.editBairro.setText(bairro)
+    binding.editCidade.setText(localidade)
+    binding.editEstado.setText(uf)
   }
 }
