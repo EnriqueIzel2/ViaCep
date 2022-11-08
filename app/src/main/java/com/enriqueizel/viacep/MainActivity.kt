@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
           }
 
           override fun onFailure(call: Call<Endereco>, t: Throwable) {
-            TODO("Not yet implemented")
+            Toast.makeText(applicationContext, "Erro inesperado!", Toast.LENGTH_SHORT).show()
           }
         })
       }
